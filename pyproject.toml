@@ -1,0 +1,25 @@
+[project]
+name = "llm-python"
+version = "0.1"
+description = "Run a Python interpreter in the LLM virtual environment"
+readme = "README.md"
+authors = [{name = "Simon Willison"}]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "llm"
+]
+
+[project.urls]
+Homepage = "https://github.com/simonw/llm-python"
+Changelog = "https://github.com/simonw/llm-python/releases"
+Issues = "https://github.com/simonw/llm-python/issues"
+CI = "https://github.com/simonw/llm-python/actions"
+
+[project.entry-points.llm]
+python = "llm_python"
+
+[project.optional-dependencies]
+test = ["pytest"]
